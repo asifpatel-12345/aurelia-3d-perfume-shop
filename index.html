@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURELIA | 3D Perfume Boutique</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="nav">
+    <div class="logo">AURELIA</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="cart">🛍 Cart <span id="cartCount">0</span></div>
+  </header>
+
+  <section id="home" class="hero">
+    <canvas id="scene"></canvas>
+    <div class="hero-text">
+      <p class="tag">NEW • LUXURY FRAGRANCES</p>
+      <h1>Wear Your <span>Signature</span></h1>
+      <p class="sub">Drag the bottle to rotate it. Pick a scent below and watch it change.</p>
+      <div class="swatches" id="swatches"></div>
+      <a href="#collection" class="btn">Shop Collection</a>
+    </div>
+  </section>
+
+  <section id="collection" class="section">
+    <h2>Our Collection</h2>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="about" class="section about">
+    <h2>The Art of Scent</h2>
+    <p>Every Aurelia perfume is crafted from rare oils and blended in small batches, so each bottle feels personal, long lasting and unforgettable.</p>
+  </section>
+
+  <footer id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>📍 Pune, India &nbsp; | &nbsp; 📧 hello@aurelia.com &nbsp; | &nbsp; 📞 +91 90000 00000</p>
+    <small>© 2026 Aurelia Perfumes. All rights reserved.</small>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
